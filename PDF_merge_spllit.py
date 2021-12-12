@@ -1,3 +1,10 @@
+# PDF Split/Merge Program
+#
+# Produce starts in 2021 December
+# Producer: Sik Cem
+
+
+
 from PyPDF2 import *
 from tkinter import *
 

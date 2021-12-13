@@ -47,6 +47,22 @@ class PDF():
         self.merge_btt.destroy()
         self.split_btt.destroy()
 
+        self.file1_lbl = Label(self.root, text="Select File 1", font=(self.font, 25))
+        self.file2_lbl = Label(self.root, text="Select File 2", font=(self.font, 25))
+        self.file1_btt = Button(self.root, text="File 1", padx=30, pady=10)
+        self.file2_btt = Button(self.root, text="File 2", padx=30, pady=10)
+        self.output_file_lbl = Label(self.root, text="Save the output file, with the file ending", font=(self.font, 25))
+        self.output_file_ety = Entry(self.root)
+        self.merger_btt = Button(self.root, text="Merge", padx=50, pady=20)
+
+
+        self.file1_lbl.place(x=150, y=200)
+        self.file2_lbl.place(x=800, y=200)
+        self.file1_btt.place(x=167, y=240)
+        self.file2_btt.place(x=813, y=240)
+        self.output_file_lbl.place(x=340, y=300)
+        self.output_file_ety.place(x=430, y=340)
+        self.merger_btt.place(x=452, y=420)
 
 
 
@@ -62,7 +78,7 @@ class PDF():
         self.merge_btt.destroy()
         self.split_btt.destroy()
 
-
+        
 
 
 

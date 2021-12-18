@@ -2,8 +2,9 @@
 #
 # Produce starts in 2021 December
 # Producer: Sik Cem
+
+
 import PyPDF2
-from PyPDF2 import *
 from tkinter import *
 from tkinter.filedialog import *
 from PyPDF2 import *
@@ -208,6 +209,14 @@ class PDF():
     def home(self):
 
         # Go back to home. First i destroy all labels or button, then i start the Start the start layout
+        try:
+            self.titel_lbl.destroy()
+            self.welcome_lbl.destroy()
+            self.merge_btt.destroy()
+            self.split_btt.destroy()
+            self.home_btt.destroy()
+        except:
+            print("No")
         try:
             self.file1_lbl.destroy()
             self.file2_lbl.destroy()
